@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/task_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="4dp"
+            android:text="Title"
+            android:textSize="25sp"
+            android:layout_alignParentTop="true"/>
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="37dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_task_item_arrow_drop_down"
+            android:onClick="showPopup"/>
+
+        <TextView
+            android:id="@+id/task_date"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_below="@id/task_title"
+            android:paddingLeft="4dp"
+            android:text="Date"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/task_time"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_below="@id/task_date"
+            android:paddingLeft="4dp"
+            android:text="Time"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
